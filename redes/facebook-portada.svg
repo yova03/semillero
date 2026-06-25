@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 312" width="820" height="312" role="img" aria-label="Semillero · portada Facebook 820x312">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap');
+      .name{ font-family:'Fraunces', Georgia, serif; font-weight:500; }
+      .mono{ font-family:'IBM Plex Mono', ui-monospace, monospace; font-weight:500; }
+    </style>
+  </defs>
+  <rect width="820" height="312" fill="#16241F"/>
+  <rect x="0" y="0" width="820" height="5" fill="#1F9C7C"/>
+  <!-- ícono centrado arriba, texto debajo (mismo patrón que genérico 16:9 y x-portada) -->
+  <g transform="translate(341, 7) scale(1.15)">
+    <circle cx="60" cy="86" r="10" fill="#fff"/>
+    <path d="M60 86 V52" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+    <g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"><path d="M60 58 C48 52 40 42 36 32"/><path d="M60 58 C72 52 80 42 84 32"/><path d="M60 52 V24"/></g>
+    <circle cx="36" cy="32" r="6" fill="#16241F" stroke="#fff" stroke-width="3"/>
+    <circle cx="84" cy="32" r="6" fill="#16241F" stroke="#fff" stroke-width="3"/>
+    <circle cx="60" cy="20" r="7" fill="#1F9C7C"/>
+  </g>
+  <text class="name" x="410" y="159" font-size="36" text-anchor="middle" fill="#ffffff">Semillero de Investigación<tspan fill="#1F9C7C">.</tspan></text>
+  <text class="mono" x="410" y="193" font-size="14" letter-spacing="3" text-anchor="middle" fill="#9fb0a9">SEMBRAR PREGUNTAS · RAMIFICAR CONOCIMIENTO</text>
+  <text class="mono" x="410" y="221" font-size="12" letter-spacing="4" text-anchor="middle" fill="#1F9C7C">INVESTIGACIÓN EN TODAS LAS RAMAS</text>
+</svg>

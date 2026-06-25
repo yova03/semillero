@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350" role="img" aria-label="Semillero · Convocatoria 1080x1350">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Space+Grotesk:wght@500;700&amp;family=Inter:wght@400;600&amp;display=swap');
+      .serif { font-family:'Fraunces', Georgia, serif; font-weight:500; }
+      .sans  { font-family:'Space Grotesk', system-ui, sans-serif; font-weight:700; }
+      .body  { font-family:'Inter', system-ui, sans-serif; font-weight:400; }
+      .mono  { font-family:'IBM Plex Mono', ui-monospace, monospace; font-weight:500; }
+    </style>
+  </defs>
+  <!-- fondo -->
+  <rect width="1080" height="1350" fill="#FFFFFF"/>
+  <!-- barra verde superior -->
+  <rect x="0" y="0" width="1080" height="8" fill="#1F9C7C"/>
+  <!-- EDITAR: tipo de convocatoria -->
+  <text class="mono" x="120" y="88" font-size="20" letter-spacing="5" fill="#1F9C7C">CONVOCATORIA</text>
+  <text class="mono" x="120" y="120" font-size="14" letter-spacing="3" fill="#5E6F68">SEMILLERO DE INVESTIGACIÓN</text>
+  <!-- línea divisoria -->
+  <rect x="120" y="142" width="840" height="1" fill="#D8E0DB"/>
+  <!-- EDITAR: título del evento (2 líneas) -->
+  <text class="serif" x="120" y="360" font-size="76" fill="#16241F">Taller de escritura</text>
+  <text class="serif" x="120" y="448" font-size="76" fill="#16241F">científica<tspan fill="#1F9C7C">.</tspan></text>
+  <!-- EDITAR: subtítulo -->
+  <text class="body" x="120" y="524" font-size="28" fill="#5E6F68">Aprende a comunicar tus hallazgos</text>
+  <text class="body" x="120" y="560" font-size="28" fill="#5E6F68">con claridad y precisión.</text>
+  <!-- EDITAR: fecha -->
+  <text class="mono" x="120" y="648" font-size="16" letter-spacing="4" fill="#9fb0a9">FECHA</text>
+  <text class="sans" x="120" y="688" font-size="34" fill="#16241F">14 y 15 de julio · 2025</text>
+  <!-- EDITAR: lugar -->
+  <text class="mono" x="120" y="766" font-size="16" letter-spacing="4" fill="#9fb0a9">LUGAR</text>
+  <text class="sans" x="120" y="804" font-size="28" fill="#16241F">Sala 204 · Edificio Central</text>
+  <!-- botón CTA -->
+  <rect x="120" y="892" width="440" height="64" rx="32" fill="#16241F"/>
+  <!-- EDITAR: texto del botón -->
+  <text class="mono" x="340" y="934" font-size="20" letter-spacing="4" text-anchor="middle" fill="#FFFFFF">INSCRÍBETE AHORA</text>
+  <!-- EDITAR: nota de cupos -->
+  <text class="mono" x="120" y="1040" font-size="18" letter-spacing="2" fill="#5E6F68">CUPOS LIMITADOS<tspan fill="#1F9C7C">.</tspan></text>
+  <!-- logo-firma: esquina inferior izquierda -->
+  <g transform="translate(64,1268) scale(0.5)">
+    <circle cx="60" cy="86" r="10" fill="#16241F"/>
+    <path d="M60 86 V52" fill="none" stroke="#16241F" stroke-width="3" stroke-linecap="round"/>
+    <g fill="none" stroke="#16241F" stroke-width="3" stroke-linecap="round"><path d="M60 58 C48 52 40 42 36 32"/><path d="M60 58 C72 52 80 42 84 32"/><path d="M60 52 V24"/></g>
+    <circle cx="36" cy="32" r="6" fill="#FFFFFF" stroke="#16241F" stroke-width="3"/>
+    <circle cx="84" cy="32" r="6" fill="#FFFFFF" stroke="#16241F" stroke-width="3"/>
+    <circle cx="60" cy="20" r="7" fill="#1F9C7C"/>
+  </g>
+  <text class="mono" x="120" y="1298" font-size="18" letter-spacing="3" fill="#16241F">SEMILLERO</text>
+</svg>

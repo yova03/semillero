@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350" role="img" aria-label="Semillero · Dato/Cifra 1080x1350">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Space+Grotesk:wght@500;700&amp;family=Inter:wght@400;600&amp;display=swap');
+      .serif { font-family:'Fraunces', Georgia, serif; font-weight:500; }
+      .sans  { font-family:'Space Grotesk', system-ui, sans-serif; font-weight:700; }
+      .body  { font-family:'Inter', system-ui, sans-serif; font-weight:400; }
+      .mono  { font-family:'IBM Plex Mono', ui-monospace, monospace; font-weight:500; }
+    </style>
+  </defs>
+  <!-- fondo -->
+  <rect width="1080" height="1350" fill="#F3F6F4"/>
+  <!-- barra verde superior -->
+  <rect x="0" y="0" width="1080" height="8" fill="#1F9C7C"/>
+  <!-- EDITAR: etiqueta de categoría -->
+  <text class="mono" x="540" y="88" font-size="20" letter-spacing="5" text-anchor="middle" fill="#5E6F68">DATO · INVESTIGACIÓN</text>
+  <!-- EDITAR: número o cifra principal -->
+  <text class="serif" x="540" y="635" font-size="290" text-anchor="middle" fill="#16241F">73<tspan fill="#1F9C7C">%</tspan></text>
+  <!-- EDITAR: descripción del dato (3 líneas) -->
+  <text class="body" x="540" y="714" font-size="28" text-anchor="middle" fill="#5E6F68">de los proyectos de investigación</text>
+  <text class="body" x="540" y="750" font-size="28" text-anchor="middle" fill="#5E6F68">presentados en semillero alcanzaron</text>
+  <text class="body" x="540" y="786" font-size="28" text-anchor="middle" fill="#5E6F68">publicación académica.</text>
+  <!-- separador -->
+  <rect x="440" y="840" width="200" height="1" fill="#D8E0DB"/>
+  <!-- EDITAR: fuente del dato -->
+  <text class="mono" x="540" y="868" font-size="18" letter-spacing="3" text-anchor="middle" fill="#9fb0a9">FUENTE: REGISTRO INTERNO · 2024</text>
+  <!-- logo-firma: esquina inferior izquierda -->
+  <g transform="translate(64,1268) scale(0.5)">
+    <circle cx="60" cy="86" r="10" fill="#16241F"/>
+    <path d="M60 86 V52" fill="none" stroke="#16241F" stroke-width="3" stroke-linecap="round"/>
+    <g fill="none" stroke="#16241F" stroke-width="3" stroke-linecap="round"><path d="M60 58 C48 52 40 42 36 32"/><path d="M60 58 C72 52 80 42 84 32"/><path d="M60 52 V24"/></g>
+    <circle cx="36" cy="32" r="6" fill="#F3F6F4" stroke="#16241F" stroke-width="3"/>
+    <circle cx="84" cy="32" r="6" fill="#F3F6F4" stroke="#16241F" stroke-width="3"/>
+    <circle cx="60" cy="20" r="7" fill="#1F9C7C"/>
+  </g>
+  <text class="mono" x="120" y="1298" font-size="18" letter-spacing="3" fill="#16241F">SEMILLERO</text>
+</svg>

@@ -1,0 +1,154 @@
+/* ============================================================
+   SEMILLERO DE INVESTIGACIÓN — Sistema de identidad visual
+   Tema: la investigación que germina y se ramifica en todas
+   las disciplinas. Sobrio, académico, universal.
+   ============================================================ */
+
+:root{
+  /* — Color — */
+  --ink:      #16241F;   /* texto, línea (verde casi negro) */
+  --white:    #FFFFFF;   /* superficie base */
+  --paper:    #F3F6F4;   /* tarjetas, fondos suaves */
+  --muted:    #5E6F68;   /* metadatos, apoyo */
+  --line:     #D8E0DB;   /* hairlines */
+
+  --brote:    #1F9C7C;   /* ACENTO único · verde germinación */
+  --brote-dk: #157A60;   /* hover / profundidad */
+  --brote-soft:#E5F3EE;  /* relleno tenue del acento */
+
+  /* — Tipografía — */
+  --font-serif: "Fraunces", Georgia, serif;        /* editorial / titulares */
+  --font-sans:  "Space Grotesk", system-ui, sans-serif; /* sistema / datos */
+  --font-body:  "Inter", system-ui, sans-serif;    /* lectura */
+  --font-mono:  "IBM Plex Mono", ui-monospace, monospace; /* ficha / código */
+
+  /* — Espacio — */
+  --gutter: clamp(20px, 5vw, 64px);
+  --s-2: 8px; --s-3: 14px; --s-4: 22px; --s-5: 36px; --s-6: 56px;
+
+  /* — Radios / líneas — */
+  --r-sm: 6px; --r-md: 12px; --r-lg: 18px; --r-full: 999px;
+  --hairline: 1px solid var(--line);
+  --rule: 2px solid var(--ink);
+
+  /* — Escala — */
+  --fs-h1: clamp(2rem, 5vw, 3.4rem);
+}
+
+*{ box-sizing: border-box; }
+html{ scroll-behavior: smooth; }
+body{
+  margin:0; background: var(--white); color: var(--ink);
+  font-family: var(--font-body); font-size: 17px; line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a{ color: inherit; text-decoration: none; }
+
+.container{ max-width: 1120px; margin: 0 auto; padding-inline: var(--gutter); }
+.section{ padding-block: clamp(48px, 8vw, 104px); }
+.section--paper{ background: var(--paper); }
+.section--ink{ background: var(--ink); color: #fff; }
+
+/* — Utilidades — */
+.kicker{ font-family: var(--font-mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.accent{ color: var(--brote); }
+.dot{ color: var(--brote); }
+.lead{ font-size: clamp(1.05rem, 2vw, 1.35rem); line-height: 1.5; }
+.small{ font-size: .85rem; }
+.muted{ color: var(--muted); }
+.hairline{ height:1px; background: var(--line); border:0; }
+.u-mt-2{margin-top:var(--s-2)} .u-mt-3{margin-top:var(--s-3)} .u-mt-4{margin-top:var(--s-4)} .u-mt-5{margin-top:var(--s-5)}
+.u-flex{display:flex} .u-wrap{flex-wrap:wrap} .u-gap-2{gap:var(--s-2)} .u-gap-3{gap:var(--s-3)}
+.u-between{justify-content:space-between} .u-items-center{align-items:center}
+
+.grid{ display:grid; gap: var(--s-4); }
+.grid-2{ grid-template-columns: repeat(2,1fr); }
+.grid-3{ grid-template-columns: repeat(3,1fr); }
+.grid-4{ grid-template-columns: repeat(4,1fr); }
+@media (max-width: 820px){ .grid-2,.grid-3,.grid-4{ grid-template-columns: 1fr; } }
+
+/* — Tipos display — */
+.display{ font-family: var(--font-serif); font-weight: 400; line-height: 1; letter-spacing:-0.01em; }
+.h1{ font-family: var(--font-sans); font-weight: 700; font-size: var(--fs-h1); letter-spacing:-0.02em; line-height:1.05; }
+.h2{ font-family: var(--font-sans); font-weight: 600; font-size: 1.5rem; letter-spacing:-0.01em; }
+.h3{ font-family: var(--font-sans); font-weight: 600; font-size: 1.15rem; }
+.archive{ font-family: var(--font-mono); font-size: 11px; letter-spacing:.1em; text-transform:uppercase; color: var(--muted); }
+.quote{ font-family: var(--font-serif); font-size: clamp(1.3rem,3vw,1.9rem); line-height:1.25; }
+
+/* — Nav — */
+.nav{
+  position: sticky; top:0; z-index:50;
+  display:flex; align-items:center; justify-content:space-between;
+  padding: 12px var(--gutter);
+  background: rgba(255,255,255,.88); backdrop-filter: blur(10px);
+  border-bottom: var(--hairline);
+}
+.nav__brand{ display:flex; align-items:center; gap:10px; font-family: var(--font-sans); font-weight:700; letter-spacing:-0.01em; }
+.nav__links{ display:flex; gap:20px; }
+.nav__links a{ font-family: var(--font-mono); font-size:12px; letter-spacing:.08em; text-transform:uppercase; color: var(--muted); transition: color .15s; }
+.nav__links a:hover{ color: var(--brote); }
+@media (max-width: 760px){ .nav__links{ display:none; } }
+
+/* — Cabecera de sección — */
+.sec-head{ display:flex; align-items:baseline; gap: var(--s-3); margin-bottom: var(--s-5); }
+.sec-num{ font-family: var(--font-mono); font-size:12px; letter-spacing:.14em; color: var(--brote); border:1px solid var(--brote); border-radius: var(--r-full); padding:4px 10px; }
+.sec-title{ font-family: var(--font-sans); font-weight:700; font-size: var(--fs-h1); letter-spacing:-0.03em; line-height:1; }
+
+/* — Tarjetas — */
+.card{ background:#fff; border: var(--hairline); border-radius: var(--r-lg); padding: var(--s-4); }
+.card--soft{ background: var(--paper); }
+.card--ink{ background: var(--ink); color:#fff; border-color: transparent; }
+.card--accent{ border-color: var(--brote); border-width:2px; }
+.stack{ display:grid; gap: var(--s-3); align-content:start; }
+
+/* — Chips — */
+.chip{ display:inline-flex; align-items:center; gap:6px; font-family: var(--font-mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase; padding:6px 12px; border-radius: var(--r-full); border: var(--hairline); color: var(--ink); }
+.chip--solid{ background: var(--ink); color:#fff; border-color: var(--ink); }
+.chip--accent{ border-color: var(--brote); color: var(--brote); }
+
+/* — Swatches de color — */
+.swatch{ border: var(--hairline); border-radius: var(--r-md); overflow:hidden; background:#fff; }
+.swatch__chip{ height:84px; }
+.swatch__meta{ padding:10px 12px; display:flex; flex-direction:column; gap:2px; }
+.swatch__meta b{ font-family: var(--font-sans); font-size:.9rem; }
+.swatch__meta span{ font-family: var(--font-mono); font-size:11px; color: var(--muted); }
+
+/* — Nota / ficha de expediente — */
+.note{ background: var(--paper); border-left: 3px solid var(--brote); border-radius: 0 var(--r-md) var(--r-md) 0; padding: var(--s-3) var(--s-4); font-family: var(--font-mono); font-size:.85rem; line-height:1.55; }
+.note__code{ display:block; color: var(--brote); margin-bottom:6px; letter-spacing:.06em; }
+
+/* — Botones — */
+.btn{ font-family: var(--font-sans); font-weight:600; font-size:.85rem; letter-spacing:.02em; padding:11px 20px; border-radius: var(--r-full); border:1.5px solid var(--ink); cursor:pointer; transition: all .15s; }
+.btn--primary{ background: var(--ink); color:#fff; }
+.btn--primary:hover{ background: var(--brote); border-color: var(--brote); }
+.btn--secondary{ background:#fff; color: var(--ink); }
+.btn--secondary:hover{ background: var(--ink); color:#fff; }
+.btn--ghost{ background:transparent; border-color:transparent; color: var(--brote); }
+
+/* — Tipo de publicación (tarjeta-formato) — */
+.ptype{ border: var(--hairline); border-radius: var(--r-lg); overflow:hidden; background:#fff; display:flex; flex-direction:column; }
+.ptype__bar{ height:6px; background: var(--brote); }
+.ptype__body{ padding: var(--s-4); display:grid; gap:10px; }
+.ptype__icon{ width:40px; height:40px; }
+
+/* — Mini-poster de plantilla — */
+.poster{ aspect-ratio: 4/5; border-radius: var(--r-md); overflow:hidden; display:flex; flex-direction:column; justify-content:space-between; padding: var(--s-3); position:relative; }
+.poster--ink{ background: var(--ink); color:#fff; }
+.poster--paper{ background: var(--paper); color: var(--ink); border: var(--hairline); }
+.poster--accent{ background: var(--brote); color:#fff; }
+.poster__kicker{ font-family: var(--font-mono); font-size:9px; letter-spacing:.14em; text-transform:uppercase; opacity:.8; }
+.poster__big{ font-family: var(--font-serif); font-size: clamp(1.3rem,5vw,1.9rem); line-height:1; }
+.poster__rep{ font-family: var(--font-sans); font-weight:700; font-size: clamp(1.1rem,4vw,1.5rem); text-transform:uppercase; line-height:.96; }
+.poster__foot{ font-family: var(--font-mono); font-size:9px; letter-spacing:.1em; opacity:.8; display:flex; justify-content:space-between; }
+
+/* — Do / Don't — */
+.judge{ border-radius: var(--r-lg); padding: var(--s-4); border: var(--hairline); }
+.judge__tag{ font-family: var(--font-mono); font-size:12px; letter-spacing:.12em; text-transform:uppercase; margin-bottom: var(--s-3); display:inline-block; }
+.judge--do .judge__tag{ color: var(--brote); }
+.judge--dont .judge__tag{ color: var(--ink); }
+.judge ul{ list-style:none; margin:0; padding:0; }
+.judge li{ padding:9px 0; border-top: var(--hairline); font-size:.92rem; }
+.judge li:first-of-type{ border-top:0; }
+
+.footer{ padding-block: var(--s-6); border-top: var(--rule); }
+</content>

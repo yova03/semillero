@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semillero de Investigación — Manual de Marca</title>
+<meta name="description" content="Manual de marca del Semillero de Investigación: el logo de la semilla con grilla de construcción, simetría y espiral áurea. Verde como diferenciador. Inspirado en el sistema Daril Yovani.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/semillero.css">
+<style>
+  .stage{ display:flex; align-items:center; justify-content:center; border-radius:var(--r-lg); aspect-ratio:16/10; }
+  .stage--paper{ background:#fff; border:var(--hairline); }
+  .stage--soft{ background:var(--paper); border:var(--hairline); }
+  .stage--ink{ background:var(--ink); }
+  .stage--brote{ background:var(--brote); }
+  .stage--sq{ aspect-ratio:1/1; }
+  .lockup{ display:flex; align-items:center; gap:16px; }
+  .lockup__txt{ display:flex; flex-direction:column; line-height:1; }
+  .lockup__name{ font-family:var(--font-sans); font-weight:700; font-size:1.4rem; letter-spacing:-0.01em; }
+  .lockup__sub{ font-family:var(--font-mono); font-size:10px; letter-spacing:.24em; text-transform:uppercase; color:var(--muted); margin-top:6px; }
+  .clearbox{ position:relative; display:inline-block; padding:30px; }
+  .clearbox::before{ content:""; position:absolute; inset:0; border:1px dashed var(--brote); border-radius:8px; }
+  figcaption{ font-family:var(--font-mono); font-size:10px; letter-spacing:.06em; color:var(--muted); text-align:center; margin-top:10px; }
+  .swatch__chip{ height:74px; }
+  .inspira{ display:flex; align-items:center; gap:18px; flex-wrap:wrap; }
+  .inspira__dot{ width:30px; height:30px; border-radius:50%; flex:none; }
+  svg{ display:block; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__brand">
+    <svg viewBox="0 0 120 120" width="28" height="28" aria-hidden="true">
+      <circle cx="60" cy="86" r="10" fill="#16241F"/><path d="M60 86 V52" fill="none" stroke="#16241F" stroke-width="3" stroke-linecap="round"/>
+      <g fill="none" stroke="#16241F" stroke-width="3" stroke-linecap="round"><path d="M60 58 C48 52 40 42 36 32"/><path d="M60 58 C72 52 80 42 84 32"/><path d="M60 52 V24"/></g>
+      <circle cx="36" cy="32" r="6" fill="#fff" stroke="#16241F" stroke-width="3"/><circle cx="84" cy="32" r="6" fill="#fff" stroke="#16241F" stroke-width="3"/><circle cx="60" cy="20" r="7" fill="#1F9C7C"/>
+    </svg>
+    SEMILLERO · MANUAL
+  </div>
+  <div class="nav__links">
+    <a href="#adn">ADN</a>
+    <a href="#simbolo">Símbolo</a>
+    <a href="#construccion">Construcción</a>
+    <a href="#lockup">Lockups</a>
+    <a href="#versiones">Versiones</a>
+    <a href="#color">Color</a>
+    <a href="#usos">Usos</a>
+    <a href="index.html">← Guía</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="container section">
+  <span class="kicker">Manual de marca · v1.0 · Semillero de Investigación</span>
+  <h1 class="display u-mt-3" style="font-size:clamp(2.4rem,8vw,5.2rem)">Una marca<br>que germina<span class="dot">.</span></h1>
+  <p class="lead u-mt-4" style="max-width:60ch">El Semillero hereda el rigor del sistema <b>Daril Yovani</b> —monoline editorial, blanco y negro, un único acento— pero cambia el alma: aquí el diferenciador es el <span class="accent">verde brote</span>, el color de lo que nace y crece. Este manual define el símbolo de la semilla, su construcción y sus reglas.</p>
+  <div class="u-flex u-wrap u-gap-3 u-mt-5" style="font-family:var(--font-mono); font-size:12px; color:var(--muted); border-top:var(--rule); padding-top:var(--s-3)">
+    <span>REG. <b style="color:var(--ink)">SEM-MARCA-001</b></span>
+    <span>DIFERENCIADOR <b style="color:var(--ink)">Verde brote · #1F9C7C</b></span>
+    <span>SISTEMA BASE <b style="color:var(--ink)">Daril Yovani</b></span>
+  </div>
+</header>
+
+<!-- 00 ADN / INSPIRACIÓN -->
+<section id="adn" class="section section--paper">
+  <div class="container">
+    <div class="sec-head"><span class="sec-num">[00]</span><h2 class="sec-title">ADN: inspirado en Daril Yovani</h2></div>
+    <div class="grid grid-2">
+      <div class="stack">
+        <p class="lead">El Semillero es una marca de la familia Daril: comparte su <b>estructura</b> y disciplina, y se distingue por el color.</p>
+        <div class="note"><span class="note__code">// LO QUE HEREDA</span>Monoline de grosor constante · base blanco y negro · un único acento (≤10%) · tipografía dual serif + grotesca · el punto como sello · esquematizar antes que decorar.</div>
+        <div class="note"><span class="note__code">// LO QUE CAMBIA</span>El acento. Daril = rojo almagre (patrimonio). Semillero = <b>verde brote</b> (germinación). Y el símbolo: una semilla que se ramifica.</div>
+      </div>
+      <div class="card stack" style="justify-content:center">
+        <span class="kicker">Acentos · dos marcas, un sistema</span>
+        <div class="inspira"><span class="inspira__dot" style="background:#B23A2E"></span><div><b style="font-family:var(--font-sans)">Daril Yovani</b><br><span class="small muted">Rojo almagre · #B23A2E · patrimonio</span></div></div>
+        <div class="hairline"></div>
+        <div class="inspira"><span class="inspira__dot" style="background:#1F9C7C"></span><div><b style="font-family:var(--font-sans)">Semillero</b><br><span class="small muted">Verde brote · #1F9C7C · germinación</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 01 SÍMBOLO -->
+<section id="simbolo" class="section container">
+  <div class="sec-head"><span class="sec-num">[01]</span><h2 class="sec-title">El símbolo</h2></div>
+  <div class="grid grid-2" style="align-items:center">
+    <div class="stage stage--soft stage--sq">
+      <svg viewBox="0 0 120 120" width="220" height="220" role="img" aria-label="Logo Semillero">
+        <circle cx="60" cy="86" r="10" fill="#16241F"/><path d="M60 86 V52" fill="none" stroke="#16241F" stroke-width="3" stroke-linecap="round"/>
+        <g fill="none" stroke="#16241F" stroke-width="3" stroke-linecap="round"><path d="M60 58 C48 52 40 42 36 32"/><path d="M60 58 C72 52 80 42 84 32"/><path d="M60 52 V24"/></g>
+        <circle cx="36" cy="32" r="6" fill="#fff" stroke="#16241F" stroke-width="3"/><circle cx="84" cy="32" r="6" fill="#fff" stroke="#16241F" stroke-width="3"/><circle cx="60" cy="20" r="7" fill="#1F9C7C"/>
+      </svg>
+    </div>
+    <div class="stack">
+      <p class="lead">Una <b>semilla</b> sólida (la base, el punto de partida) de la que brota un tallo que se <b>ramifica en nodos</b>: las ramas del saber. El nodo superior, el que florece, va en <span class="accent">verde brote</span>.</p>
+      <div class="note"><span class="note__code">// ANATOMÍA</span>Semilla · tallo recto · dos ramas en espejo + eje central · tres nodos (laterales abiertos, superior en acento). Monoline de grosor constante, simétrico respecto al eje vertical.</div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 CONSTRUCCIÓN Y SIMETRÍA -->
+<section id="construccion" class="section section--paper">
+  <div class="container">
+    <div class="sec-head"><span class="sec-num">[02]</span><h2 class="sec-title">Construcción y simetría</h2></div>
+    <p class="lead" style="max-width:62ch; margin-bottom:var(--s-5)">El símbolo se traza sobre una <b>grilla modular</b> con un <b>eje de simetría</b> vertical y una <b>espiral áurea</b> que ordena la apertura de las ramas. Así se reconstruye siempre idéntico.</p>
+    <div class="grid grid-2" style="align-items:start">
+      <figure style="margin:0">
+        <div class="stage stage--paper stage--sq">
+          <svg viewBox="0 0 120 120" width="300" height="300" role="img" aria-label="Grilla de construcción">
+            <!-- grilla -->
+            <g stroke="#C9D6D0" stroke-width="0.5">
+              <line x1="12" y1="0" x2="12" y2="120"/><line x1="24" y1="0" x2="24" y2="120"/><line x1="36" y1="0" x2="36" y2="120"/><line x1="48" y1="0" x2="48" y2="120"/><line x1="72" y1="0" x2="72" y2="120"/><line x1="84" y1="0" x2="84" y2="120"/><line x1="96" y1="0" x2="96" y2="120"/><line x1="108" y1="0" x2="108" y2="120"/>
+              <line x1="0" y1="12" x2="120" y2="12"/><line x1="0" y1="24" x2="120" y2="24"/><line x1="0" y1="36" x2="120" y2="36"/><line x1="0" y1="48" x2="120" y2="48"/><line x1="0" y1="72" x2="120" y2="72"/><line x1="0" y1="84" x2="120" y2="84"/><line x1="0" y1="96" x2="120" y2="96"/><line x1="0" y1="108" x2="120" y2="108"/>
+            </g>
+            <!-- eje de simetría (vertical) + horizontal -->
+            <line x1="60" y1="0" x2="60" y2="120" stroke="#1F9C7C" stroke-width="0.9" stroke-dasharray="3 3" opacity=".85"/>
+            <line x1="0" y1="60" x2="120" y2="60" stroke="#1F9C7C" stroke-width="0.7" opacity=".4"/>
+            <!-- círculos guía: nodos laterales equidistantes del eje -->
+            <circle cx="36" cy="32" r="10" fill="none" stroke="#1F9C7C" stroke-width="0.7" stroke-dasharray="2 3" opacity=".7"/>
+            <circle cx="84" cy="32" r="10" fill="none" stroke="#1F9C7C" stroke-width="0.7" stroke-dasharray="2 3" opacity=".7"/>
+            <!-- espiral áurea (apertura de las ramas) -->
+            <path d="M104 16 a44 44 0 0 0 -44 44 a27 27 0 0 0 27 27 a17 17 0 0 0 17 -17 a10 10 0 0 0 -10 -10 a6 6 0 0 0 -6 6" fill="none" stroke="#1F9C7C" stroke-width="1" opacity=".45"/>
+            <!-- símbolo encima -->
+            <circle cx="60" cy="86" r="10" fill="#16241F"/><path d="M60 86 V52" fill="none" stroke="#16241F" stroke-width="3" stroke-linecap="round"/>
+            <g fill="none" stroke="#16241F" stroke-width="3" stroke-linecap="round"><path d="M60 58 C48 52 40 42 36 32"/><path d="M60 58 C72 52 80 42 84 32"/><path d="M60 52 V24"/></g>
+            <circle cx="36" cy="32" r="6" fill="#fff" stroke="#16241F" stroke-width="3"/><circle cx="84" cy="32" r="6" fill="#fff" stroke="#16241F" stroke-width="3"/><circle cx="60" cy="20" r="7" fill="#1F9C7C"/>
+          </svg>
+        </div>
+        <figcaption>Grilla 12 u · eje de simetría · círculos de nodos · espiral áurea</figcaption>
+      </figure>
+      <div class="stack">
+        <div class="note"><span class="note__code">// SIMETRÍA</span>Las dos ramas son <b>espejo perfecto</b> respecto al eje vertical (x = 60). Salen del mismo punto y terminan en nodos equidistantes (x = 36 y x = 84).</div>
+        <div class="note"><span class="note__code">// PROPORCIÓN</span>La <b>apertura</b> de las ramas sigue la espiral áurea: ni muy cerradas ni muy abiertas. El nodo de acento corona el eje.</div>
+        <div class="note"><span class="note__code">// MÓDULO</span>Grosor de línea = 3 u sobre grilla de 12. Mantén ese grosor en cualquier tamaño; no lo afines ni lo engroses.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 LOCKUPS -->
+<section id="lockup" class="section container">
+  <div class="sec-head"><span class="sec-num">[03]</span><h2 class="sec-title">Lockups</h2></div>
+  <p class="lead" style="max-width:58ch; margin-bottom:var(--s-5)">Símbolo + nombre. <b>Horizontal</b> para cabeceras; <b>vertical</b> para avatares y portadas.</p>
+  <div class="grid grid-2">
+    <div class="stage stage--soft">
+      <div class="lockup">
+        <svg viewBox="0 0 120 120" width="72" height="72" aria-hidden="true">
+          <circle cx="60" cy="86" r="10" fill="#16241F"/><path d="M60 86 V52" fill="none" stroke="#16241F" stroke-width="3" stroke-linecap="round"/>
+          <g fill="none" stroke="#16241F" stroke-width="3" stroke-linecap="round"><path d="M60 58 C48 52 40 42 36 32"/><path d="M60 58 C72 52 80 42 84 32"/><path d="M60 52 V24"/></g>
+          <circle cx="36" cy="32" r="6" fill="#fff" stroke="#16241F" stroke-width="3"/><circle cx="84" cy="32" r="6" fill="#fff" stroke="#16241F" stroke-width="3"/><circle cx="60" cy="20" r="7" fill="#1F9C7C"/>
+        </svg>
+        <div class="lockup__txt"><span class="lockup__name">Semillero<span class="dot">.</span></span><span class="lockup__sub">de investigación</span></div>
+      </div>
+    </div>
+    <div class="stage stage--ink">
+      <div style="display:flex; flex-direction:column; align-items:center; gap:14px">
+        <svg viewBox="0 0 120 120" width="82" height="82" aria-hidden="true">
+          <circle cx="60" cy="86" r="10" fill="#fff"/><path d="M60 86 V52" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+          <g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"><path d="M60 58 C48 52 40 42 36 32"/><path d="M60 58 C72 52 80 42 84 32"/><path d="M60 52 V24"/></g>
+          <circle cx="36" cy="32" r="6" fill="#16241F" stroke="#fff" stroke-width="3"/><circle cx="84" cy="32" r="6" fill="#16241F" stroke="#fff" stroke-width="3"/><circle cx="60" cy="20" r="7" fill="#1F9C7C"/>
+        </svg>
+        <div class="lockup__txt" style="align-items:center"><span class="lockup__name" style="color:#fff">Semillero<span class="dot">.</span></span><span class="lockup__sub" style="color:#9fb0a9">de investigación</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 VERSIONES -->
+<section id="versiones" class="section section--paper">
+  <div class="container">
+    <div class="sec-head"><span class="sec-num">[04]</span><h2 class="sec-title">Versiones</h2></div>
+    <div class="grid grid-4">
+      <figure style="margin:0"><div class="stage stage--paper stage--sq">
+        <svg viewBox="0 0 120 120" width="96" height="96" aria-hidden="true"><circle cx="60" cy="86" r="10" fill="#16241F"/><path d="M60 86 V52" fill="none" stroke="#16241F" stroke-width="3" stroke-linecap="round"/><g fill="none" stroke="#16241F" stroke-width="3" stroke-linecap="round"><path d="M60 58 C48 52 40 42 36 32"/><path d="M60 58 C72 52 80 42 84 32"/><path d="M60 52 V24"/></g><circle cx="36" cy="32" r="6" fill="#fff" stroke="#16241F" stroke-width="3"/><circle cx="84" cy="32" r="6" fill="#fff" stroke="#16241F" stroke-width="3"/><circle cx="60" cy="20" r="7" fill="#1F9C7C"/></svg>
+      </div><figcaption>Principal · color</figcaption></figure>
+      <figure style="margin:0"><div class="stage stage--ink stage--sq">
+        <svg viewBox="0 0 120 120" width="96" height="96" aria-hidden="true"><circle cx="60" cy="86" r="10" fill="#fff"/><path d="M60 86 V52" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/><g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"><path d="M60 58 C48 52 40 42 36 32"/><path d="M60 58 C72 52 80 42 84 32"/><path d="M60 52 V24"/></g><circle cx="36" cy="32" r="6" fill="#16241F" stroke="#fff" stroke-width="3"/><circle cx="84" cy="32" r="6" fill="#16241F" stroke="#fff" stroke-width="3"/><circle cx="60" cy="20" r="7" fill="#1F9C7C"/></svg>
+      </div><figcaption>Inversa · color</figcaption></figure>
+      <figure style="margin:0"><div class="stage stage--paper stage--sq">
+        <svg viewBox="0 0 120 120" width="96" height="96" aria-hidden="true"><circle cx="60" cy="86" r="10" fill="#16241F"/><path d="M60 86 V52" fill="none" stroke="#16241F" stroke-width="3" stroke-linecap="round"/><g fill="none" stroke="#16241F" stroke-width="3" stroke-linecap="round"><path d="M60 58 C48 52 40 42 36 32"/><path d="M60 58 C72 52 80 42 84 32"/><path d="M60 52 V24"/></g><circle cx="36" cy="32" r="6" fill="#fff" stroke="#16241F" stroke-width="3"/><circle cx="84" cy="32" r="6" fill="#fff" stroke="#16241F" stroke-width="3"/><circle cx="60" cy="20" r="7" fill="#16241F"/></svg>
+      </div><figcaption>Monocromo tinta</figcaption></figure>
+      <figure style="margin:0"><div class="stage stage--brote stage--sq">
+        <svg viewBox="0 0 120 120" width="96" height="96" aria-hidden="true"><circle cx="60" cy="86" r="10" fill="#fff"/><path d="M60 86 V52" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/><g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"><path d="M60 58 C48 52 40 42 36 32"/><path d="M60 58 C72 52 80 42 84 32"/><path d="M60 52 V24"/></g><circle cx="36" cy="32" r="6" fill="#1F9C7C" stroke="#fff" stroke-width="3"/><circle cx="84" cy="32" r="6" fill="#1F9C7C" stroke="#fff" stroke-width="3"/><circle cx="60" cy="20" r="7" fill="#fff"/></svg>
+      </div><figcaption>Sobre verde</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 05 PROTECCIÓN -->
+<section class="section container">
+  <div class="sec-head"><span class="sec-num">[05]</span><h2 class="sec-title">Área de protección y tamaño mínimo</h2></div>
+  <div class="grid grid-2" style="align-items:center">
+    <div class="stage stage--soft"><div class="clearbox">
+      <svg viewBox="0 0 120 120" width="130" height="130" aria-hidden="true"><circle cx="60" cy="86" r="10" fill="#16241F"/><path d="M60 86 V52" fill="none" stroke="#16241F" stroke-width="3" stroke-linecap="round"/><g fill="none" stroke="#16241F" stroke-width="3" stroke-linecap="round"><path d="M60 58 C48 52 40 42 36 32"/><path d="M60 58 C72 52 80 42 84 32"/><path d="M60 52 V24"/></g><circle cx="36" cy="32" r="6" fill="#fff" stroke="#16241F" stroke-width="3"/><circle cx="84" cy="32" r="6" fill="#fff" stroke="#16241F" stroke-width="3"/><circle cx="60" cy="20" r="7" fill="#1F9C7C"/></svg>
+    </div></div>
+    <div class="stack">
+      <div class="note"><span class="note__code">// AIRE MÍNIMO</span>Deja libre alrededor un margen igual al <b>diámetro de la semilla</b>. Nada de texto ni bordes dentro de esa zona (línea punteada verde).</div>
+      <div>
+        <span class="kicker">Tamaño mínimo</span>
+        <div class="u-flex u-gap-3 u-mt-3" style="align-items:flex-end; flex-wrap:wrap">
+          <figure style="margin:0; text-align:center"><svg viewBox="0 0 120 120" width="48" height="48" aria-hidden="true"><circle cx="60" cy="86" r="10" fill="#16241F"/><path d="M60 86 V52" fill="none" stroke="#16241F" stroke-width="4" stroke-linecap="round"/><g fill="none" stroke="#16241F" stroke-width="4" stroke-linecap="round"><path d="M60 58 C48 52 40 42 36 32"/><path d="M60 58 C72 52 80 42 84 32"/><path d="M60 52 V24"/></g><circle cx="60" cy="20" r="8" fill="#1F9C7C"/></svg><figcaption>32 px</figcaption></figure>
+          <figure style="margin:0; text-align:center"><svg viewBox="0 0 120 120" width="28" height="28" aria-hidden="true"><circle cx="60" cy="86" r="10" fill="#16241F"/><path d="M60 86 V52" fill="none" stroke="#16241F" stroke-width="5" stroke-linecap="round"/><g fill="none" stroke="#16241F" stroke-width="5" stroke-linecap="round"><path d="M60 58 C48 52 40 42 36 32"/><path d="M60 58 C72 52 80 42 84 32"/><path d="M60 52 V24"/></g><circle cx="60" cy="20" r="9" fill="#1F9C7C"/></svg><figcaption>16 px · favicon</figcaption></figure>
+        </div>
+        <p class="small muted u-mt-3">Bajo 16 px, simplifica: solo semilla + eje + nodo de acento (sin nodos laterales).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 COLOR -->
+<section id="color" class="section section--paper">
+  <div class="container">
+    <div class="sec-head"><span class="sec-num">[06]</span><h2 class="sec-title">Color</h2></div>
+    <p class="lead" style="max-width:60ch; margin-bottom:var(--s-5)">Base de tinta y papel con grises funcionales, y un único acento: el <b>verde brote</b> (≤10% de la pieza).</p>
+    <div class="grid grid-4">
+      <div class="swatch"><div class="swatch__chip" style="background:#16241F"></div><div class="swatch__meta"><b>Tinta</b><span>#16241F · trazo</span></div></div>
+      <div class="swatch"><div class="swatch__chip" style="background:#1F9C7C"></div><div class="swatch__meta"><b>Verde brote</b><span>#1F9C7C · acento</span></div></div>
+      <div class="swatch"><div class="swatch__chip" style="background:#157A60"></div><div class="swatch__meta"><b>Verde profundo</b><span>#157A60 · hover</span></div></div>
+      <div class="swatch"><div class="swatch__chip" style="background:#F3F6F4; border-bottom:1px solid #D8E0DB"></div><div class="swatch__meta"><b>Suave</b><span>#F3F6F4 · tarjetas</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 USOS -->
+<section id="usos" class="section container">
+  <div class="sec-head"><span class="sec-num">[07]</span><h2 class="sec-title">Usos correctos e incorrectos</h2></div>
+  <div class="grid grid-2">
+    <div class="judge judge--do"><span class="judge__tag">✓ Correcto</span><ul>
+      <li>Conservar la simetría y el grosor de línea constante.</li>
+      <li>Verde brote solo como remate (≤10%).</li>
+      <li>Respetar el aire de protección y el tamaño mínimo.</li>
+      <li>Mantener el nodo superior en verde.</li>
+      <li>Usar solo las cuatro versiones autorizadas.</li>
+    </ul></div>
+    <div class="judge judge--dont"><span class="judge__tag">✕ Incorrecto</span><ul>
+      <li>Deformar, inclinar o romper la simetría.</li>
+      <li>Rellenar de verde o añadir un segundo color.</li>
+      <li>Poner sombras, degradados o contornos extra.</li>
+      <li>Usar el rojo de Daril (es de la otra marca).</li>
+      <li>Reescribir el nombre con otra tipografía.</li>
+    </ul></div>
+  </div>
+</section>
+
+<footer class="footer container">
+  <div class="lockup">
+    <svg viewBox="0 0 120 120" width="38" height="38" aria-hidden="true"><circle cx="60" cy="86" r="10" fill="#16241F"/><path d="M60 86 V52" fill="none" stroke="#16241F" stroke-width="3" stroke-linecap="round"/><g fill="none" stroke="#16241F" stroke-width="3" stroke-linecap="round"><path d="M60 58 C48 52 40 42 36 32"/><path d="M60 58 C72 52 80 42 84 32"/><path d="M60 52 V24"/></g><circle cx="36" cy="32" r="6" fill="#fff" stroke="#16241F" stroke-width="3"/><circle cx="84" cy="32" r="6" fill="#fff" stroke="#16241F" stroke-width="3"/><circle cx="60" cy="20" r="7" fill="#1F9C7C"/></svg>
+    <div class="lockup__txt"><span class="lockup__name">Semillero<span class="dot">.</span></span><span class="lockup__sub">Manual de marca · v1.0 · 2026</span></div>
+  </div>
+  <p class="display u-mt-4" style="font-size:clamp(1.8rem,7vw,4rem)">Inspirada en Daril, con vida propia<span class="dot">.</span></p>
+</footer>
+
+</body>
+</html>

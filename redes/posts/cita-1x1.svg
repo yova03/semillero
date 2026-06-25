@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080" role="img" aria-label="Semillero · Cita/Veredicto 1080x1080">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Space+Grotesk:wght@500;700&amp;family=Inter:wght@400;600&amp;display=swap');
+      .serif { font-family:'Fraunces', Georgia, serif; font-weight:500; }
+      .sans  { font-family:'Space Grotesk', system-ui, sans-serif; font-weight:700; }
+      .body  { font-family:'Inter', system-ui, sans-serif; font-weight:400; }
+      .mono  { font-family:'IBM Plex Mono', ui-monospace, monospace; font-weight:500; }
+    </style>
+  </defs>
+  <rect width="1080" height="1080" fill="#16241F"/>
+  <rect x="0" y="0" width="1080" height="8" fill="#1F9C7C"/>
+  <!-- EDITAR: área temática -->
+  <text class="mono" x="540" y="78" font-size="18" letter-spacing="5" text-anchor="middle" fill="#9fb0a9">CITA · VEREDICTO</text>
+  <!-- comilla decorativa -->
+  <rect x="120" y="150" width="12" height="70" rx="6" fill="#1F9C7C" opacity="0.4"/>
+  <rect x="148" y="150" width="12" height="70" rx="6" fill="#1F9C7C" opacity="0.4"/>
+  <!-- EDITAR: texto de la cita (3-4 líneas, Fraunces 60px) -->
+  <text class="serif" x="540" y="440" font-size="60" text-anchor="middle" fill="#FFFFFF">La ciencia no busca</text>
+  <text class="serif" x="540" y="510" font-size="60" text-anchor="middle" fill="#FFFFFF">certezas absolutas:</text>
+  <text class="serif" x="540" y="580" font-size="60" text-anchor="middle" fill="#FFFFFF">busca preguntas</text>
+  <text class="serif" x="540" y="650" font-size="60" text-anchor="middle" fill="#FFFFFF">mejores<tspan fill="#1F9C7C">.</tspan></text>
+  <rect x="440" y="692" width="200" height="1" fill="#5E6F68"/>
+  <!-- EDITAR: autor -->
+  <text class="sans" x="540" y="724" font-size="20" letter-spacing="3" text-anchor="middle" fill="#9fb0a9">— CARL SAGAN</text>
+  <!-- EDITAR: referencia -->
+  <text class="mono" x="540" y="752" font-size="14" letter-spacing="2" text-anchor="middle" fill="#5E6F68">Cosmos, 1980</text>
+  <!-- chip de área -->
+  <rect x="390" y="800" width="300" height="38" rx="19" fill="none" stroke="#5E6F68" stroke-width="1"/>
+  <!-- EDITAR: área temática -->
+  <text class="mono" x="540" y="825" font-size="15" letter-spacing="4" text-anchor="middle" fill="#9fb0a9">ASTRONOMÍA</text>
+  <g transform="translate(64,992) scale(0.5)">
+    <circle cx="60" cy="86" r="10" fill="#FFFFFF"/>
+    <path d="M60 86 V52" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+    <g fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"><path d="M60 58 C48 52 40 42 36 32"/><path d="M60 58 C72 52 80 42 84 32"/><path d="M60 52 V24"/></g>
+    <circle cx="36" cy="32" r="6" fill="#16241F" stroke="#FFFFFF" stroke-width="3"/>
+    <circle cx="84" cy="32" r="6" fill="#16241F" stroke="#FFFFFF" stroke-width="3"/>
+    <circle cx="60" cy="20" r="7" fill="#1F9C7C"/>
+  </g>
+  <text class="mono" x="120" y="1022" font-size="18" letter-spacing="3" fill="#9fb0a9">SEMILLERO</text>
+</svg>

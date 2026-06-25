@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Semillero de Investigación">
+  <!-- semilla -->
+  <circle cx="60" cy="86" r="10" fill="#16241F"/>
+  <!-- tallo -->
+  <path d="M60 86 V52" fill="none" stroke="#16241F" stroke-width="3" stroke-linecap="round"/>
+  <!-- ramas simétricas (espejo respecto al eje x=60) -->
+  <g fill="none" stroke="#16241F" stroke-width="3" stroke-linecap="round">
+    <path d="M60 58 C48 52 40 42 36 32"/>
+    <path d="M60 58 C72 52 80 42 84 32"/>
+    <path d="M60 52 V24"/>
+  </g>
+  <!-- nodos simétricos · el central, brote, en acento -->
+  <circle cx="36" cy="32" r="6" fill="#fff" stroke="#16241F" stroke-width="3"/>
+  <circle cx="84" cy="32" r="6" fill="#fff" stroke="#16241F" stroke-width="3"/>
+  <circle cx="60" cy="20" r="7" fill="#1F9C7C"/>
+</svg>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semillero — Logos y portadas para redes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="stylesheet" href="../assets/semillero.css">
+<style>
+  .wrap{ max-width:1080px; margin:0 auto; padding:0 var(--gutter); }
+  .asset{ border:var(--hairline); border-radius:var(--r-lg); overflow:hidden; background:#fff; margin-bottom:var(--s-5); }
+  .asset__head{ display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; padding:14px 20px; border-bottom:var(--hairline); }
+  .asset__title{ font-family:var(--font-sans); font-weight:600; }
+  .asset__dim{ font-family:var(--font-mono); font-size:12px; color:var(--muted); }
+  .asset__preview{ background:var(--paper); display:flex; align-items:center; justify-content:center; padding:22px; }
+  .asset__preview img{ max-width:100%; height:auto; display:block; border-radius:6px; box-shadow:0 1px 0 rgba(0,0,0,.06); }
+  .asset__preview.sq img{ max-width:300px; }
+  .btns{ display:flex; gap:10px; flex-wrap:wrap; }
+  .btn-sm{ font-family:var(--font-sans); font-weight:600; font-size:.8rem; padding:9px 16px; border-radius:999px; border:1.5px solid var(--ink); cursor:pointer; background:var(--ink); color:#fff; }
+  .btn-sm.alt{ background:#fff; color:var(--ink); }
+  .grid-perfiles{ display:grid; grid-template-columns:repeat(3,1fr); gap:var(--s-4); }
+  @media(max-width:680px){ .grid-perfiles{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__brand">
+    <svg viewBox="0 0 120 120" width="26" height="26" aria-hidden="true"><circle cx="60" cy="86" r="10" fill="#16241F"/><path d="M60 86 V52" fill="none" stroke="#16241F" stroke-width="3" stroke-linecap="round"/><g fill="none" stroke="#16241F" stroke-width="3" stroke-linecap="round"><path d="M60 58 C48 52 40 42 36 32"/><path d="M60 58 C72 52 80 42 84 32"/><path d="M60 52 V24"/></g><circle cx="36" cy="32" r="6" fill="#fff" stroke="#16241F" stroke-width="3"/><circle cx="84" cy="32" r="6" fill="#fff" stroke="#16241F" stroke-width="3"/><circle cx="60" cy="20" r="7" fill="#1F9C7C"/></svg>
+    SEMILLERO · REDES
+  </div>
+  <div class="nav__links"><a href="../index.html">← Guía</a></div>
+</nav>
+
+<header class="wrap section">
+  <span class="kicker">Kit de redes sociales · Semillero de Investigación</span>
+  <h1 class="display u-mt-3" style="font-size:clamp(2rem,7vw,3.6rem)">Logos y portadas<span class="dot">.</span></h1>
+  <p class="lead u-mt-4" style="max-width:60ch">Pulsa <b>Descargar PNG</b> en cada pieza para obtenerla a su medida exacta, lista para subir. Las medidas son las oficiales 2026. Los archivos maestros son SVG (vectoriales, escalables sin pérdida).</p>
+  <div class="note u-mt-4" style="background:var(--paper)"><span class="note__code">// TIP</span>Si una portada exporta el texto con otra tipografía, usa el <b>SVG</b> (botón “Abrir SVG”): en el navegador se ve con la fuente correcta y cualquier conversor lo pasa a PNG perfecto.</div>
+</header>
+
+<!-- PERFILES -->
+<section class="wrap" style="padding-bottom:var(--s-5)">
+  <div class="sec-head"><span class="sec-num">01</span><h2 class="sec-title" style="font-size:1.6rem">Fotos de perfil · 1080×1080</h2></div>
+  <p class="small muted" style="margin-bottom:var(--s-4)">Cuadradas, sirven para LinkedIn, Facebook, Instagram y X. Súbelas y la plataforma las recorta en círculo.</p>
+  <div class="grid-perfiles" id="perfiles"></div>
+</section>
+
+<!-- PORTADAS -->
+<section class="wrap" style="padding-bottom:var(--s-6)">
+  <div class="sec-head"><span class="sec-num">02</span><h2 class="sec-title" style="font-size:1.6rem">Portadas / banners</h2></div>
+  <div id="portadas"></div>
+</section>
+
+<footer class="footer wrap">
+  <p class="archive">Semillero de Investigación · Kit de redes · 2026</p>
+</footer>
+
+<script>
+  const perfiles = [
+    { file:'perfil-color.svg',   title:'Perfil · color',   w:1080, h:1080 },
+    { file:'perfil-inversa.svg', title:'Perfil · inversa', w:1080, h:1080 },
+    { file:'perfil-verde.svg',   title:'Perfil · verde',   w:1080, h:1080 },
+  ];
+  const portadas = [
+    { file:'linkedin-perfil-portada.svg', title:'LinkedIn · portada de perfil', w:1584, h:396 },
+    { file:'linkedin-pagina-portada.svg', title:'LinkedIn · portada de página', w:1128, h:191 },
+    { file:'facebook-portada.svg',        title:'Facebook · portada de página', w:820,  h:312 },
+    { file:'x-portada.svg',               title:'X / Twitter · encabezado',     w:1500, h:500 },
+    { file:'generico-16x9.svg',           title:'Genérico 16:9 (YouTube, slides)', w:1920, h:1080 },
+  ];
+
+  async function downloadPNG(file, w, h){
+    try{
+      const res = await fetch(file);
+      const svgText = await res.text();
+      const blob = new Blob([svgText], {type:'image/svg+xml;charset=utf-8'});
+      const url = URL.createObjectURL(blob);
+      await document.fonts.ready;
+      const img = new Image();
+      img.crossOrigin = 'anonymous';
+      await new Promise((ok, err)=>{ img.onload=ok; img.onerror=err; img.src=url; });
+      const canvas = document.createElement('canvas');
+      canvas.width = w; canvas.height = h;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0, w, h);
+      URL.revokeObjectURL(url);
+      canvas.toBlob((png)=>{
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(png);
+        a.download = file.replace('.svg', '.png');
+        a.click();
+      }, 'image/png');
+    }catch(e){ alert('No se pudo exportar el PNG. Usa “Abrir SVG” y conviértelo, o haz captura. ('+e+')'); }
+  }
+
+  function card(a, square){
+    const el = document.createElement('div');
+    el.className = 'asset';
+    el.innerHTML = `
+      <div class="asset__head">
+        <div><div class="asset__title">${a.title}</div><div class="asset__dim">${a.w} × ${a.h} px · SVG</div></div>
+        <div class="btns">
+          <a class="btn-sm" href="png/${a.file.replace('.svg','.png')}" download>Descargar PNG</a>
+          <a class="btn-sm alt" href="${a.file}" target="_blank">Abrir SVG</a>
+        </div>
+      </div>
+      <div class="asset__preview ${square?'sq':''}"><img src="png/${a.file.replace('.svg','.png')}" alt="${a.title}"></div>`;
+    return el;
+  }
+
+  const pc = document.getElementById('perfiles');
+  perfiles.forEach(a=> pc.appendChild(card(a, true)));
+  const pt = document.getElementById('portadas');
+  portadas.forEach(a=> pt.appendChild(card(a, false)));
+</script>
+</body>
+</html>
